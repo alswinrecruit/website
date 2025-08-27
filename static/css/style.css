@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;800&display=swap');
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #000000;
+}
+
+.nav-link {
+    color: #000000 !important;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #333333 !important;
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#cyber-hero-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta {
+    transform-origin: center;
+}
+
+/* Services Section */
+.services-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.2);
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.why-icon {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    transition: transform 0.5s;
+}
+
+.why-item:hover .why-icon {
+    transform: rotate(360deg);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.cta-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-main {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+/* Forms */
+.form-container {
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.form-centered {
+    text-align: center;
+}
+
+.form-centered .form-control,
+.form-centered .g-recaptcha,
+.form-centered .btn-primary {
+    display: inline-block;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #333333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #333333;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-centered {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #000000;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+    margin-right: 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.form-check-input:focus {
+    border-color: #333333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-check-label {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #000000;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-primary i {
+    margin-right: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.alert {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.g-recaptcha {
+    margin: 1.5rem auto;
+    display: inline-block;
+}
+
+/* Terms & Conditions */
+.terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.terms-content p {
+    margin-bottom: 1rem;
+}
+
+/* Demo Page */
+.demo-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 50%, #e8ecef 50%);
+}
+
+.demo-section h1 {
+    font-size: 3rem;
+    animation: pulseText 2s infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulseText {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.text-primary {
+    color: #000000 !important;
+}
+
+.text-primary:hover {
+    color: #333333 !important;
+    text-decoration: none;
+}
